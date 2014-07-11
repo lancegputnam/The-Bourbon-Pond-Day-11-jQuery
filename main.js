@@ -604,15 +604,34 @@ var items = [{
 
 var firstPart = '<div style="background-image: url(';
 var lastPart = ') " class="box"></div>' 
- 
+
+//You are looping through the items on each item. 
+//on 612 we are creating a string for that div 
+//the string appends to the container on 615
+//If we have 9 items in the array, we are going to take 9 passes on the loop. 
+//The inner loop as many times as there are images for that item 
+//The variable on 619 overrides the variable on 617
+//Inside of the loop is the only place that we can know what the item is
+//The last box should be the one that we want to refer to 
+//use item.Image[0].image._570xN to get the first image from the listing 
+
 items.forEach(function(item){
   item.Images.forEach(function(image){
-    var totalString = firstPart + image.url_570xN + lastPart
-    $('.container').append(totalString)
-    var totalString = '<div class="SquareTitles">' + item.title + '</div>'
-    $('.box').last().append(totalString)
+      var totalString = firstPart + image.url_570xN + lastPart
+      $('.container').append(totalString)
+      var totalString = '<div class="SquareTitles">' + item.title + '</div>'
+      $('.box').last().append(totalString)
   })
 })
+
+// items.forEach(function(item){
+//   item.Images.forEach(function(image){
+//       var totalString = firstPart + item.Images[0].url_570xN + lastPart
+//       $('.container').prepend(totalString)
+//       var totalString = '<div class="SquareTitles">' + item.title + '</div>'
+//       $('.box').last().html(totalString)
+//   })
+// })
 
 // for(var i = 0; i < items.length; i++) {
 //     var obj = items[i];
@@ -623,7 +642,17 @@ items.forEach(function(item){
 
 // $('.box').hover(function() { $(this).addClass('active') })
 
+///how do i organize by price????
 
+//This will add a url to the box images 
+// items.forEach(function(item){
+//       var firstPart = '< a href="' + item.url + '"><div style="background-image: url(';
+//       var lastPart = ') " class="box"></div>'
 
-
+//       var totalString = firstPart + image.url_570xN + lastPart
+//       $('.container').append(totalString)
+//       var totalString = '<div class="SquareTitles">' + item.title + '</div>'
+//       $('.box').last().append(totalString)
+//   })
+// })
 

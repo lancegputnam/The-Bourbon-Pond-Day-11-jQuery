@@ -60,11 +60,12 @@
      size: 14px;
      height: auto;
      margin-top: 240px;
+     z-index: 1;
 }
 .overlay {
      background: rgba(249, 248, 246, 0.60);
-     bottom: 402px;
-     left: 100px;
+     bottom: 178px;
+     left: 98px;
      position: absolute;
      right: 8px;
      top: 24px;
@@ -132,6 +133,9 @@
      line-height: 80px;
      text-decoration: none;
 }
+.sidebartext a:hover{
+     font-weight: bold;
+}
 .sidebartexttwo {
      margin-top: 50px;
      text-align: center;
@@ -153,7 +157,5 @@
      margin-left: -55px;
      text-decoration: none;
      margin-top: 50px;
-}
-        
-            
+} 
 
