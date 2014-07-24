@@ -1,6 +1,6 @@
 The-Bourbon-Pond
 ==============================
-The Bourbon Pond is an application that allows users to browse through a curated selection of bourbon related items that are found on Etsy. The website pulls items from the Etsy API to display items on the site. The Bourbon Pond was also my first experience in using jQuery and methods such as forEach.
+The Bourbon Pond is an application that allows users to browse through a curated selection of bourbon related items that are found on Etsy. The website pulls items from Etsy's API to display items on the site. The Bourbon Pond was also my first experience in using jQuery and methods such as forEach.
 
 Primary Technologies: <br>
 HTML, CSS, JavaScript, jQuery, Etsy API
